@@ -1,0 +1,16 @@
+@font-face{
+    font-family: 'monserat-bold';
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face{
+    font-family: 'monserat-regular';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family: 'myriadPro-bold';
+    src: url(../fonts/MyriadPro-Bold.ttf);
+}
+@font-face{
+    font-family: 'myriadPro-regular';
+    src: url(../fonts/MyriadPro-Regular.ttf);
+}
