@@ -22,7 +22,7 @@ function Reclicker () {
         barDiv.style.display = 'none';
         iconBar.style.display = 'block';
         logo.style.display = 'block';
-        container.style.padding = 0;
+        container.style.padding = '15px';
         rowIndo.style.display = 'block';
         barDiv.style.right = '.780px';
         barDiv.style.transition = '500ms';
