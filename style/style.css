@@ -186,6 +186,50 @@ img{
     color: #fff;
 }
 
+.link__container__mobile{
+    background-color: #fff;
+    height: 100vh;
+    display: none;
+    width: 85%;
+    position: absolute;
+    right: -780px;
+    transition: 500ms;
+}
+
+.row-links__mobile{
+    color: var(--red) !important;
+    display: flex;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.icon-bar{
+    display: flex;
+    display: none;
+    align-items: center;
+    font-size: 45px;
+    color: var(--red);
+    cursor: pointer;
+}
+
+.logo-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--red);
+    width: 85%;
+    font-size: 45px;
+}
+
+.logo-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 
 /* header end */
@@ -344,20 +388,20 @@ img{
         background: url(../img/header/1.jpg) no-repeat center center /cover;
     }
 
-    .link__container{
-        display: none;
+    .header-links img{
+        margin-right: 20px;
     }
-
+    
     .big__info{
         font-size: 35px;
     }
-
+    
     .info-container{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
+    
     .main__info-likns{
         height: 750px;
     }
@@ -365,7 +409,7 @@ img{
     .main__center-container{
         justify-content: space-between;
     }
-
+    
     .main__center-info{
         margin: 0;
     }
@@ -392,7 +436,24 @@ img{
         display: flex;
         align-items: center;
     }
+    
+    .link__container{
+        display: none;
+    }
 
+    .header-links{
+        width: 500px;
+        border-bottom: 1px solid var(--red);
+        padding: 10px 0;
+        display: inline-block;
+        color: var(--red);
+        text-align: right !important;
+    }
+
+    .icon-bar{
+        display: block;
+    }
+    
     .footer-container{
         padding-bottom: 30px;
     }
@@ -409,6 +470,12 @@ img{
     }
 }
 
+@media(max-width:630px){
+    .header-links{
+        width: 300px;
+    }
+}
+
 @media(max-width:435px){
     .main-photo{
         transform: scale(0.7);
@@ -416,6 +483,10 @@ img{
     
     .info__center{
         max-width: 290px;
+    }
+
+    .header-links{
+        width: 250px;
     }
 }
 
@@ -432,6 +503,10 @@ img{
 @media(max-width:370px){
     .info{
         text-align: center;
+    }
+
+    .header-links{
+        width: 200px;
     }
 }
 
