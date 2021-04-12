@@ -12,22 +12,28 @@ function clicker () {
         logo.style.display = 'none';
         container.style.padding = 0;
         rowIndo.style.display = 'none';
-        barDiv.style.right = '.780px';
-        barDiv.style.transition = '500ms';
+        barDiv.style.animation = 'menuBarTransition 500ms'
+
     })
 }
 
 function Reclicker () {
     iconCross.addEventListener('click', function() {
         barDiv.style.display = 'none';
-        iconBar.style.display = 'block';
         logo.style.display = 'block';
-        container.style.padding = '15px';
+        container.style.padding = '0 15px';
         rowIndo.style.display = 'block';
-        barDiv.style.right = '.780px';
-        barDiv.style.transition = '500ms';
+        barDiv.style.animation = 'reMenuBarTransition 500ms'
     })
+    if (window.innerWidth < 780) {
+        iconBar.setAttribute('style', 'display: block;')
+    } else if (window.innerWidth > 780) {
+        iconBar.removeAttribute('style', 'display: block;')
+        iconBar.setAttribute('style', 'display: none;')
+    }
+    setTimeout(() => Reclicker(), 10);
 }
+
 
 clicker();
 Reclicker();

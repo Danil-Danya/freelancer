@@ -191,9 +191,11 @@ img{
     height: 100vh;
     display: none;
     width: 85%;
-    position: absolute;
-    right: -780px;
+    position: fixed;
     transition: 500ms;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .row-links__mobile{
@@ -403,7 +405,7 @@ img{
     }
     
     .main__info-likns{
-        height: 750px;
+        height: 850px;
     }
     
     .main__center-container{
@@ -450,6 +452,20 @@ img{
         text-align: right !important;
     }
 
+    .team__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info{
+        width: 202px;
+    }
+
+    .mobile-center{
+        width: 350px;
+    }
+
     .icon-bar{
         display: block;
     }
@@ -488,17 +504,12 @@ img{
     .header-links{
         width: 250px;
     }
+
+    .mobile-center{
+        width: 300px;
+    }
 }
 
-/* @media(max-width:412px){
-    .main-photo{
-        transform: scale(0.6);
-    }
-
-    .info__center{
-        max-width: 250px;
-    }
-} */
 
 @media(max-width:370px){
     .info{
@@ -511,5 +522,31 @@ img{
 }
 
 
-/* mobile ens */
+/* mobile end */
+/* ********************************** */
+
+
+/* animation start */
+/* ********************************** */
+
+
+@keyframes menuBarTransition {
+    0%{
+        right: -780px;
+    }
+    100%{
+        right: 0;
+    }
+}
+@keyframes reMenuBarTransition {
+    0%{
+        right: 0;
+    }
+    100%{
+        right: -780px;
+    }
+}
+
+
+/* animation end */
 /* ********************************** */
